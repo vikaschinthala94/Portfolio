@@ -1,0 +1,196 @@
+ /* Navbar Styles */
+ .navbar {
+    background-color: #090909; 
+    overflow: hidden;      /* Clear floats */
+    padding: 10px 0;
+    text-align: center;    /* Center the navbar items */
+}
+.navbar a {
+    color: white;          /* White text for links */
+    padding: 14px 20px;    /* Padding around the links */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Align the links horizontally */
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.navbar a:hover {
+    background-color: #575757; /* Darker background on hover */
+}
+.navbar .bn1 {
+    font-size: 16px; /* Font size for the links */
+    
+}
+/* <<--------------------------navbar closed------------------------------>> */
+.card{
+    width:auto;
+    height:auto;
+    background-color: #090909;
+    color: rgba(0, 0, 0, 0.86);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+.titlename{
+    font-size: 100px;
+    font-weight: 500;
+    color: rgb(7, 6, 6);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.bn1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:medium;
+}
+.bn2{
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+}
+.cardedu{
+    width: auto;
+    /* max-width: 1200px; */
+    height:auto;
+    background-color: #e8e8e8;
+    color: rgba(0, 0, 0, 0.86);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+h2{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(29, 85, 70);
+}
+/* Card container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;           /* Allows multiple cards to wrap */
+    justify-content: center;    /* Centers the cards */
+    gap: 20px;                  /* Adds space between cards */
+    padding: 20px;
+}
+
+/* Individual card styles */
+.cards {
+    background-color: #e0e0e0;  /* Light gray background */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;                /* Default width */
+    max-width: 300px;           /* Limit maximum width */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.cards:hover {
+    transform: translateY(-10px);  /* Lifts the card slightly on hover */
+}
+
+/* Card title */
+.cards-title {
+    font-size: 26px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Card content */
+.cards-content {
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .cards {
+        flex: 0 1 45%; /* Cards take up 45% of container width */
+    }
+}
+
+@media (min-width: 992px) {
+    .cards {
+        flex: 0 1 30%; /* Cards take up 30% of container width */
+    }
+}
+.bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }

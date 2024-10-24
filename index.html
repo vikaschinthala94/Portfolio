@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Universal Container Style */
+      .container {
+        width: 100%;
+        max-width: 1300px;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        box-sizing: border-box;
+      }
+
+      /* Responsive Grid System */
+      .row {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        text-align: center;
+        /* padding-left: 20px; */
+        padding: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* margin: 10px; */
+      }
+
+      .column {
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      /* Responsive Breakpoints */
+      @media (min-width: 576px) {
+        .column-sm-6 {
+          flex: 0 0 50%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .column-md-4 {
+          flex: 0 0 33.33%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .column-lg-3 {
+          flex: 0 0 25%;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .column-xl-2 {
+          flex: 0 0 16.66%;
+        }
+      }
+      .about {
+        display: flex;
+        text-align: center;
+        /* padding-left: 20px; */
+        padding: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="#" class="bn1">Home</a>
+      <a href="#about" class="bn1">About</a>
+      <a href="#projects" class="bn1">Projects</a>
+      <a href="#Expertise" class="bn1">Expertise</a>
+      <a href="#skills" class="bn1">Skills</a>
+      <a class="bn1" href="mailto:chinthalavikas94@gmail.com">Contact Us</a>
+    </div>
+
+    <!-- Container for content -->
+    <div class="container">
+      <div class="row">
+        <div class="column column-sm-6 column-md-4 column-lg-3">
+          <div class="card">
+            <p>Select file</p>
+            <img src="assets/my-pic.png" alt="Image 1" style="width: 100%" />
+          </div>
+        </div>
+        <div class="column column-sm-6 column-md-4 column-lg-3">
+          <div class="titlename">Vikas chinthala</div>
+          <h2
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 20px;
+            "
+          >
+            I'm a 
+            <br>Full Stack Engineer
+          </h2>
+          <div class="bn1">
+            Highly motivated Full-Stack Developer with experience in Java,
+            Javascript. React Native and React.js technologies. Proficient in
+            problem-solving and collaboration to develop efficient, scalable,
+            and user-centric applications
+          </div>
+        </div>
+        <!-- Add more columns as needed -->
+      </div>
+      <div class="row">
+        <button class="bn5"  style="margin-left: 10px;"onclick="downloadResume()">Download CV</button>
+        <button class="bn5" href="mailto:chinthalavikas94@gmail.com">Contact us</button>
+      </div>
+      <div class="row">
+        <a href="https://github.com/vikaschinthala94?tab=repositories">
+          <img src="assets/githublogo.png" width="40" />
+        </a>
+        <a href="http://www.linkedin.com/in/vikas-chinthala">
+          <img src="assets/linkedicon.png" width="40" />
+        </a>
+        <a href="mailto:chinthalavikas94@gmail.com">
+          <img src="assets/mailicon.png" width="40" />
+        </a>
+        <a href="callto:+91-9390484687">
+          <img src="assets/phoneicon.png" width="40" />
+        </a>
+      </div>
+
+      <div class="row" id="about">
+        <div class="column column-sm-5 column-md-1 column-lg-1">
+          <div class="cardedu">
+            <h2>about me</h2>
+            <!-- <img src="assets/gistlogo.jpg" alt="Image 1" style="width:"100px", height:"40px"> -->
+            <div class="bn2">
+              I am a results-oriented Full Stack Developer with 1 year of
+              experience in building dynamic web applications, proficient in
+              front-end (HTML, CSS, JavaScript, React) and back-end (Java,
+              Node.js) technologies. I also specialize in cross-platform mobile
+              app development using React Native. I have strong problem-solving
+              and collaboration skills, creating efficient, scalable, and
+              user-centric applications. My technical expertise includes
+              React.js, Java, JavaScript, HTML5, CSS, and Node.js. I am eager to
+              contribute my skills to a challenging and collaborative
+              environment
+            </div>
+            <br />
+            <div class="bn2">
+              Geethanjali Institute of Technology and Science - NELLORE
+            </div>
+            <div class="bn1">2021-2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------ certificates------------------------ -->
+      <center><h2 >certificate's</h2></center>
+      <div class="cards-container">
+        <div class="cards">
+          <div class="cards-title">META</div>
+          <img src="assets/meta.png" alt="Image 1" style="width: 100px" />
+          <div class="cards-content">THE FULL STACK</div>
+        </div>
+        <div class="cards">
+          <div class="cards-title">my greatlearning</div>
+          <img
+            src="assets/greatlearning logo.png"
+            alt="Image 1"
+            style="width: 100px"
+          />
+          <div class="cards-content">MASTER THE FULL STACK</div>
+        </div>
+        <div class="cards">
+          <div class="cards-title">my greatlearning</div>
+          <img
+            src="assets/greatlearning logo.png"
+            alt="Image 1"
+            style="width: 100px"
+          />
+          <div class="cards-content">MERN STACK</div>
+        </div>
+        <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;margin: 40px; font-weight: 200;">
+          explore my certification's <span><a href="www.linkedin.com/in/vikas-chinthala">click_here</a></span>
+        </h3>
+      </div>
+      <!-- -------------------- -->
+
+      <div id="projects" style=" text-align: center;padding: 10px;justify-content: center; background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(69, 69, 69) 35%, rgb(255, 255, 255) 100%);;">
+        <h2 style="color: beige;">projects</h2>
+        <div style="display:flex;justify-content:space-evenly;flex-wrap: wrap; gap:10px">
+            <div style="width:auto; height:auto; background-color:#e8e8e8;;padding:30px">
+                <img src="./assets/mobile.png" alt="pro1" style="width: 200px" />
+                <div style="font-size: 30px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin: -20px;">Uber clone</div>
+                <h6 style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin: 30px;">Full stack web application</h6>
+                
+            </div>
+            <div style="width:auto; height:auto; background-color: #e8e8e8;padding:30px">
+              <img src="./assets/apple.png" alt="pro1" style="width: 180px" />
+              <div style="font-size: 30px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin: 20px;">Apple clone</div>
+              <h6 style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin: -10px;">Full stack web application</h6>
+              
+          </div>
+            <div style="width:auto; height:auto; background-color: #e8e8e8;padding:30px">
+              <img src="./assets/tic-tac-toe.png" alt="pro1" style="width: 190px" />
+              <div style="font-size: 30px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin: -20px;padding:30px">Tic-tac-toe<br>Game</div>
+              <h6 style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin: -20px;"></h6>
+          </div>
+          <div style="width:auto; height:auto; background-color:#e8e8e8;padding:30px">
+            <img src="./assets/number-10.png" alt="pro1" style="width: 190px" />
+            <div style="font-size: 30px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin: -20px;padding:30px">Mini projects<br>10+</div>
+        </div>
+        <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;margin: 40px; font-weight: 200;">
+          My projects Really change my appearance are of level of performance . My projects Avaliable here <span><a href="https://github.com/vikaschinthala94">click_here</a> to see more</span>
+        </h3>
+        </div>
+        </div>
+<!-- projects closed start recognition -->
+<div style=" text-align: center;padding: 10px;justify-content: center;">
+  <h2>Recognition</h2>
+  <div style="display:flex;justify-content:space-evenly;flex-wrap: wrap; gap:10px;flex-direction: column;">
+    <div style="width:auto; height:auto; background-color: orange;padding:50px;border: rgb(82, 82, 82) 1px solid;border-radius: 5px;">
+      <img src="./assets/3rd-place (1).png" alt="pro1" style="width: 200px" />
+      <div style="font-size: 20px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin: -5px;padding:30px">HackerRank-3rd rank</div>
+      <h6 style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin: -10px;">university level<br>
+      <span style="font-size: 12px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding: 20px;">It's was conducted on HackerRank more than 300+ of students participated. Its completely technical Coding test</span>
+      </h6>
+    </div>
+    <div style="width:auto; height:auto; background-color:rgb(255, 106, 0);padding:50px;border: rgb(82, 82, 82) 1px solid;border-radius: 5px;">
+      <img src="./assets/programming.png" alt="pro1" style="width: 200px" />
+      <div style="font-size: 20px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin: -5px;padding:30px">Codeathan-11th rank</div>
+      <h6 style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin: -10px;">university level<br>
+      <span style="font-size: 12px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding: 30px;">It's was conducted on HackerRank more than 350+ of students participated. Its completely java related based DSA solving programming test</span>
+      </h6>
+  </div>
+</div>
+<!-- -------------------------projects closed-------------------- -->
+ <div id="Expertise"style="text-align: center;padding: 10px;justify-content: center;">
+  <h2>Expertize</h2>
+  <div style="display:flex;justify-content:space-evenly;flex-wrap: wrap; gap:10px;flex-direction: column;">
+    <div style="width:auto; height:auto; background-color: rgb(0, 0, 0);padding:50px;border: rgb(82, 82, 82) 1px solid;border-radius: 5px;display:flex;justify-content:space-evenly;flex-wrap: wrap;">
+      <div>
+        <ol style="display:flex;justify-content:space-evenly;flex-wrap: wrap; gap:10px;flex-direction: column; width:auto ;text-align: start;color:white;font-family: Arial, Helvetica, sans-serif;font-size: 10px;">
+          <li> Front end Development</li>
+          <ul>
+            <li>React.js</li>
+            <li>Master layout techniques (Grid, Flexbox)</li>
+            <li>Learn responsive design and media queries</li>
+            <li>DOM manipulation.
+              Event handling.
+              Error handling in JavaScript.</li>
+            <li>Tailwind.CSS : utility-first CSS framework</li>
+          </ul>
+          
+          <br>
+          <li>Backend</li>
+          <ul>
+            <li>Java</li>
+            <li>node.Js:(JavaScript/Node.js: Learn server-side JavaScript with Node.js)</li>
+            <li>Express.Js</li>
+          </ul>
+          <br>
+          <li>Database</li>
+          <ul>
+            <li>MySQL, PostgreSQL,</li>
+            <li>No Sql</li>
+            <ul>
+              <li>Mongodb</li>
+            </ul>
+          </ul>
+          <li> Authentication & security</li>
+          <ul>
+            <li>JWT (JSON Web Tokens), OAuth</li>
+            <li>Protecting routes, handling user sessions.</li>
+          </ul><br>
+        </ol>
+
+      </div>
+      <ol style="display:flex;justify-content:space-evenly;flex-wrap: wrap; gap:10px;flex-direction: column;width:auto ;text-align: start;color:white ;font-family: Arial, Helvetica, sans-serif;font-size: 10px;">
+        <li> RESTful API's</li>
+        <ul>
+          <li>HTTP methods (GET, POST, PUT, DELETE), Status codes, Headers.</li>
+          <li>Error handling in API responses</li>
+          <li>REST API versioning</li>
+        </ul><br>
+        <li>Additional</li>
+        <ul>
+          <li>Git hub : Git and GitHub (push, pull requests, branch management).</li>
+          <li>Git :Gitflow methodology for project development.</li>
+        </ul>
+        <br>
+        <li>Testing & Debugging</li>
+        <ul>
+          <li>nit Testing</li>
+          <li>API testing: postman</li>
+          <li>Debugging tools</li>
+        </ul>
+      </ol>
+      
+    </div>
+    
+
+  </div>
+ </div>
+  <!--  reco closed and start skills-->
+    <div id="skills"style="text-align: center;padding:10px;justify-content: center;padding: 40px; background-color: rgb(255, 255, 255);">
+      <h2>Skills</h2>
+      <div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;flex-direction: row;gap :40px;padding:30px">
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/java (1).png" alt="java" style="width:100px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">Java</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/javascript.png" alt="Javascript" style="width:110px"/>
+          <br>
+          <h3 style="font-size: 27px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">JavaScript</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/nodejs.png" alt="node" style="width:100px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px;">Node.JS</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/database-management (1).png" alt="mongodb" style="width:100px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px;">MongoDB</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/html-5.png" alt="html" style="width:100px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px;">HTML</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/css (1).png" alt="css" style="width:100px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px;">CSS</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/react.png" alt="react" style="width:110px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px;">React.JS</h3>
+        </div>
+        <div style="width:auto;height: auto;background-color:rgb(255, 255, 255);">
+          <img src="./assets/reactnative.png" alt="react native" style="width:110px"/>
+          <br>
+          <h3 style="font-size: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px;">React Native</h3>
+        </div>
+      </div>
+
+    </div>
+<!-- skill end  or nav start  -->
+ <div id="contactus" style="width: auto;height: auto; background-color: black; border-top-left-radius: 50px;border-bottom-right-radius: 50px;">
+  <div style="text-align: center;padding: 20px;justify-content: center;color: rgb(43, 160, 0);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h3 style="padding:20px">Join us<br>
+      <span style="font-family:'Courier New', Courier, monospace;font-size: 30px;">
+        VIKAS_CHINTHALA_
+      </span>
+      <br>
+      <h3 style="margin-top: -30px;">Full Stack Engineer<br>
+      </h3>
+     </h3>
+     <button class="bn5"href="mailto:chinthalavikas94@gmail.com">contact me</button>
+     <h3 style="padding:20px;margin-top: -10px; font-size: 15px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><span href="callto:+91-9390484687">+91-9390484687</span><br>
+     Mobile responsive website's & React native application's
+     </h3>
+  </div>
+ </div>
+ <!-- end bottomnavbar -->
+ <div class="row">
+  <a href="https://github.com/vikaschinthala94?tab=repositories">
+    <img src="assets/githublogo.png" width="40" />
+  </a>
+  <a href="http://www.linkedin.com/in/vikas-chinthala">
+    <img src="assets/linkedicon.png" width="40" />
+  </a>
+  <a href="mailto:chinthalavikas94@gmail.com">
+    <img src="assets/mailicon.png" width="40" />
+  </a>
+  <a href="callto:+91-9390484687">
+    <img src="assets/phoneicon.png" width="40" />
+  </a>
+</div>
+
+      </div>
+    </div>
+    <script>
+      function downloadResume() {
+        var url = "./assets/CHINTHALA_VIKAS.pdf"; // Replace with the actual path to your resume file
+        var filename = "./assets/CHINTHALA_VIKAS.pdf"; // Set the desired filename for the downloaded file
+
+        var link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        link.click();
+      }
+
+      //   document.addEventListener('DOMContentLoaded', function () {
+      //     const cards = document.querySelectorAll('.cards');
+
+      //     const observer = new IntersectionObserver((entries, observer) => {
+      //       entries.forEach(entry => {
+      //         if (entry.isIntersecting) {
+      //           entry.target.classList.add('visible');
+      //           observer.unobserve(entry.target); // Stop observing once visible
+      //         }
+      //       });
+      //     }, { threshold: 0.1}); // Trigger when 10% of the element is visible
+
+      //     cards.forEach(card => {
+      //       observer.observe(card);
+      //     });
+      //   });
+    </script>
+  </body>
+</html>
